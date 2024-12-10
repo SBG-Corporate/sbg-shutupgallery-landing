@@ -1,6 +1,6 @@
 # SBG-Shutupgallery Landing
 
-This is the landing page for the AD La Ferroviaria project. It is a wordpress site that is hosted on the [ferro-marketplace.es](https://landing.ferro-marketplace.es/) and [int-ferro-marketplace.es](https://int-landing.ferro-marketplace.es/) domain.
+This is the landing page for the SBG-Shutupgallery project. It is a wordpress site that is hosted on the [int-shutupgallery.DOMAIN.com](https://int-shutupgallery.compositly.com/) domain.
 
 
 ## Development
