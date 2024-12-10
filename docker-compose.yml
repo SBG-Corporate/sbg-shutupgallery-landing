@@ -1,0 +1,39 @@
+# services:
+#   adf-landing-ddbb:
+#     container_name: adf-landing-ddbb
+#     # We use a mariadb image which supports both amd64 & arm64 architecture
+#     # image: mariadb:10.6.4-focal
+#     # If you really want to use MySQL, uncomment the following line
+#     image: mysql:8.0.27
+#     command: '--default-authentication-plugin=mysql_native_password'
+#     # volumes:
+#     #   - db_data:/var/lib/mysql
+#     restart: always
+#     environment:
+#       - MYSQL_ROOT_PASSWORD=12fg8!wq5r#e6
+#       - MYSQL_DATABASE=adfwpdb
+#       - MYSQL_USER=developer
+#       - MYSQL_PASSWORD=dkd3F2nfldwKjd2n.
+#     expose:
+#       - 33062:3306
+#   adf-landing-wp:
+#     container_name: adf-landing-wp
+#     image: wordpress:latest
+#     ports:
+#       - 11000:80
+#     restart: always
+#     environment:
+#       - WORDPRESS_DB_HOST=adf-landing-ddbb
+#       - WORDPRESS_DB_NAME=adfwpdb
+#       - WORDPRESS_DB_USER=developer
+#       - WORDPRESS_DB_PASSWORD=dkd3F2nfldwKjd2n.
+      
+#     # volumes:
+#     #   - wp_data:/var/www/html
+#     #   - ${PWD}/src/configs/.htaccess:/var/www/html/.htaccess
+#     #   - ${PWD}/src/configs/php.ini:/usr/local/etc/php/conf.d/php.ini
+#     #   - ${PWD}/src/x.io-20240209-105457-dk2hht.wpress:/var/www/html/wp-content/ai1wm-backups/x.io-20240209-105457-dk2hht.wpress
+
+# # volumes:
+# #   db_data:
+# #   wp_data:
